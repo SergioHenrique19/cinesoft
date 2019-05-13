@@ -81,7 +81,7 @@ public class Filme {
 	// Metodo que cadastra filme
 	public void cadastrarFilme(int idFilme, String titulo, String dataLancamento, int duracao) {
 		Filme f = new Filme(idFilme, titulo, dataLancamento, duracao);
-		listaFilmes.add(f);
+		// listaFilmes.add(f);
 	}
 
 	@Override

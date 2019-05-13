@@ -97,7 +97,7 @@ public class Ingresso {
 		Vendedor v = new Vendedor(nomeVendedor);
 		Sessao s = new Sessao(idSessao);
 		Ingresso i = new Ingresso(idIngresso, dataVenda, s, v, tipoIngresso, qtdPoltronas, total);
-		listaIngressos.add(i);
+		// listaIngressos.add(i);
 	}
 
 	@Override

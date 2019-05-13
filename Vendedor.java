@@ -77,11 +77,15 @@ public class Vendedor {
 	public void setSalario(double salario) {
 		this.salario = salario;
 	}
-	
+		
+	public List<Vendedor> getListaVendedores() {
+		return listaVendedores;
+	}
+
 	// Metodo que cadastra vendedor
 	public void cadastrarVendedor(int cpf, String nome, boolean sexo, String dataContrato, double salario) {
 		Vendedor v = new Vendedor(cpf, nome, sexo, dataContrato, salario);
-		listaVendedores.add(v);
+		// listaVendedores.add(v);
 	}
 
 	@Override

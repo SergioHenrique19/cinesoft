@@ -93,7 +93,7 @@ public class Sessao {
 		Filme f = new Filme(titulo);
 		
 		Sessao s = new Sessao(idSessao, hora, dia, f, idioma, tela);
-		listaSessoes.add(s);
+		// listaSessoes.add(s);
 	}
 
 	@Override
