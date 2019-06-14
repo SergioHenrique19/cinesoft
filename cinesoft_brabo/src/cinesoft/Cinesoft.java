@@ -3,6 +3,11 @@ package cinesoft;
 import java.util.Locale;
 import java.util.Scanner;
 
+import models.Filme;
+import models.IngressoInteiro;
+import models.Sessao;
+import models.Vendedor;
+
 public class Cinesoft {
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
@@ -140,7 +145,7 @@ public class Cinesoft {
 					Sessao s1 = new Sessao(idSessao);
 					Vendedor v1 = new Vendedor(nome);
 					
-					Ingresso t = new Ingresso(idIngresso, dataVenda, s1, v1, tipoIngresso, qtdPoltronas, total);
+					IngressoInteiro t = new IngressoInteiro(idIngresso, dataVenda, s1, v1, tipoIngresso, qtdPoltronas, total);
 					t.venderIngresso(idIngresso, dataVenda, s1, v1, tipoIngresso, qtdPoltronas, total, nome, idSessao);
 					
 					break;

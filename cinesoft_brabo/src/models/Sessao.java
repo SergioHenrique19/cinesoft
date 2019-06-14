@@ -1,21 +1,18 @@
-/* Trabalho Final de PLP (2019/01)
- * Este codigo representa a estrutura de uma sessao e suas operacoes.
- * Uma sessao precisa referenciar um filme.
- * Uma sessao pode cadastrar, listar ou editar. */
-
-package cinesoft;
+package models;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import models.Idioma;
+import models.Tela;
 
 public class Sessao {
 	// Atributos de uma sessao
 	private int idSessao;
 	private int hora;
-	private String dia;
 	private Filme filme;   // Atributo que referencia um (titulo) filme
-	private boolean idioma;   // Onde "true = dublado" e "false = legendado"
-	private boolean tela;   // Onde "true = 3D" e "false = 2D"
+	private Idioma idioma;   // dublado ou legendado
+	private Tela tela;   // Onde "true = 3D" e "false = 2D"
 	
 	// Atributos gerais
 	private List<Sessao> listaSessoes;
@@ -24,12 +21,11 @@ public class Sessao {
 	public Sessao(int idSessao) {
 		this.idSessao = idSessao;
 	}
-
+	
 	// Construtor com parametros individuais
-	public Sessao(int idSessao, int hora, String dia, Filme filme, boolean idioma, boolean tela) {
+	public Sessao(int idSessao, int hora, Filme filme, Idioma idioma, Tela tela) {
 		this.idSessao = idSessao;
 		this.hora = hora;
-		this.dia = dia;
 		this.filme = filme;
 		this.idioma = idioma;
 		this.tela = tela;
@@ -39,65 +35,49 @@ public class Sessao {
 	public Sessao(List<Sessao> listaSessoes) {
 		this.listaSessoes = new ArrayList<Sessao>();
 	}
-
+	
 	public int getIdSessao() {
 		return idSessao;
 	}
-
+	
 	public void setIdSessao(int idSessao) {
 		this.idSessao = idSessao;
 	}
-
+	
 	public int getHora() {
 		return hora;
 	}
-
+	
 	public void setHora(int hora) {
 		this.hora = hora;
 	}
-
-	public String getDia() {
-		return dia;
-	}
-
-	public void setDia(String dia) {
-		this.dia = dia;
-	}
-
+	
 	public Filme getFilme() {
 		return filme;
 	}
-
+	
 	public void setFilme(Filme filme) {
 		this.filme = filme;
 	}
-
-	public boolean isIdioma() {
+	
+	public Idioma getIdioma() {
 		return idioma;
 	}
-
-	public void setIdioma(boolean idioma) {
+	
+	public void setIdioma(Idioma idioma) {
 		this.idioma = idioma;
 	}
-
-	public boolean isTela() {
+	
+	public Tela getTela() {
 		return tela;
 	}
-
-	public void setTela(boolean tela) {
+	
+	public void setTela(Tela tela) {
 		this.tela = tela;
 	}
 	
-	// Metodo que cadastra sessao
-	public void cadastraSessao(int idSessao, int hora, String dia, Filme filme, boolean idioma, boolean tela, String titulo) {
-		Filme f = new Filme(titulo);
-		
-		Sessao s = new Sessao(idSessao, hora, dia, f, idioma, tela);
-		// listaSessoes.add(s);
-	}
-
 	@Override
 	public String toString() {
-		return idSessao + ", " + hora + ", " + dia + ", " + filme + ", " + idioma + ", " + tela;
+		return idSessao + ", " + hora + ", " + ", " + filme + ", " + idioma + ", " + tela;
 	}
 }
