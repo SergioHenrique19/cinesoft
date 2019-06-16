@@ -2,12 +2,19 @@ package controllers;
 
 import java.text.ParseException;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
 import controllers.Controlador;
 import models.*;
+import repository.Database;
 
 public class Cinesoft {
 	public static void main(String[] args) throws ParseException {
-		// Teste para salvar filme na lista
+		Database db = new Database();
+		Connection c = db.open();
+
 		Controlador.cadastrarFilme(0, "avatar", "25/09/2010", 120, "12");		
 		System.out.println(Controlador.listaFilmes.get(0));
 		
