@@ -1,3 +1,7 @@
+/* Trabalho Final de PLP (2019/01)
+ * Este codigo representa a estrutura de um filme e seus atributos.
+ * Desenvolvido por: Gabriel Peruzza, João Salgado, Otavio Lima e Sérgio Garcia */
+
 package models;
 
 import java.text.SimpleDateFormat;
@@ -12,10 +16,10 @@ public class Filme {
 	private Date dataLancamento;
 	private int duracao;   // Duração deve ser em minutos
 	private ClassIndic classIndic;
-	
+
 	// Construtor sem parametro
 	public Filme(){}
-	
+
 	// Construtor com parametros individuais
 	public Filme(int idFilme, String titulo, Date dataLancamento, int duracao, ClassIndic classIndic) {
 		this.idFilme = idFilme;
@@ -24,40 +28,40 @@ public class Filme {
 		this.duracao = duracao;
 		this.classIndic = classIndic;
 	}
-	
+
 	public int getIdFilme() {
 		return idFilme;
 	}
-	
+
 	public void setIdFilme(int idFilme) {
 		this.idFilme = idFilme;
 	}
-	
+
 	public String getTitulo() {
 		return titulo;
 	}
-	
+
 	public void setTitulo(String titulo) {
 		this.titulo = titulo;
 	}
-	
+
 	public String getDataLancamento() {
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		return sdf.format(dataLancamento);
 	}
-	
+
 	public void setDataLancamento(Date dataLancamento) {
 		this.dataLancamento = dataLancamento;
 	}
-	
+
 	public int getDuracao() {
 		return duracao;
 	}
-	
+
 	public void setDuracao(int duracao) {
 		this.duracao = duracao;
-	}	
-	
+	}
+
 	public ClassIndic getClassIndic() {
 		return classIndic;
 	}
@@ -65,7 +69,7 @@ public class Filme {
 	public void setClassIndic(ClassIndic classIndic) {
 		this.classIndic = classIndic;
 	}
-	
+
 	@Override
 	public String toString() {
 		return idFilme + "," + titulo + "," + getDataLancamento() + "," + duracao + "," + classIndic.getValor();
