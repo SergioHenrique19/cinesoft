@@ -1,7 +1,6 @@
 package models;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import models.ClassIndic;
@@ -14,13 +13,8 @@ public class Filme {
 	private int duracao;   // Duração deve ser em minutos
 	private ClassIndic classIndic;
 	
-	// Atributos gerais
-	private List<Filme> listaFilmes;
-	
-	// Construtor com um unico parametro
-	public Filme(String titulo) {
-		this.titulo = titulo;
-	}
+	// Construtor sem parametro
+	public Filme(){}
 	
 	// Construtor com parametros individuais
 	public Filme(int idFilme, String titulo, Date dataLancamento, int duracao, ClassIndic classIndic) {
@@ -29,11 +23,6 @@ public class Filme {
 		this.dataLancamento = dataLancamento;
 		this.duracao = duracao;
 		this.classIndic = classIndic;
-	}
-	
-	// Construtor com a lista de filmes
-	public Filme(List<Filme> listaFilmes) {
-		this.listaFilmes = new ArrayList<Filme>();
 	}
 	
 	public int getIdFilme() {
@@ -52,8 +41,9 @@ public class Filme {
 		this.titulo = titulo;
 	}
 	
-	public Date getDataLancamento() {
-		return dataLancamento;
+	public String getDataLancamento() {
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+		return sdf.format(dataLancamento);
 	}
 	
 	public void setDataLancamento(Date dataLancamento) {
@@ -66,14 +56,6 @@ public class Filme {
 	
 	public void setDuracao(int duracao) {
 		this.duracao = duracao;
-	}
-	
-	public List<Filme> getListaFilmes() {
-		return listaFilmes;
-	}
-	
-	public void setListaFilmes(List<Filme> listaFilmes) {
-		this.listaFilmes = listaFilmes;
 	}	
 	
 	public ClassIndic getClassIndic() {
@@ -86,6 +68,6 @@ public class Filme {
 	
 	@Override
 	public String toString() {
-		return idFilme + ", " + titulo + ", " + dataLancamento + ", " + duracao + ", " + classIndic;
+		return idFilme + "," + titulo + "," + getDataLancamento() + "," + duracao + "," + classIndic;
 	}
 }

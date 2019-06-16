@@ -1,8 +1,5 @@
 package models;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import models.Idioma;
 import models.Tela;
 
@@ -14,13 +11,8 @@ public class Sessao {
 	private Idioma idioma;   // dublado ou legendado
 	private Tela tela;   // Onde "true = 3D" e "false = 2D"
 	
-	// Atributos gerais
-	private List<Sessao> listaSessoes;
-	
-	// Construtor com unico parametro
-	public Sessao(int idSessao) {
-		this.idSessao = idSessao;
-	}
+	// Construtor sem parametro
+	public Sessao(){}
 	
 	// Construtor com parametros individuais
 	public Sessao(int idSessao, int hora, Filme filme, Idioma idioma, Tela tela) {
@@ -29,11 +21,6 @@ public class Sessao {
 		this.filme = filme;
 		this.idioma = idioma;
 		this.tela = tela;
-	}
-	
-	// Construtor com lista de sessao
-	public Sessao(List<Sessao> listaSessoes) {
-		this.listaSessoes = new ArrayList<Sessao>();
 	}
 	
 	public int getIdSessao() {
@@ -78,6 +65,6 @@ public class Sessao {
 	
 	@Override
 	public String toString() {
-		return idSessao + ", " + hora + ", " + ", " + filme + ", " + idioma + ", " + tela;
+		return idSessao + "," + hora + "," + filme.getTitulo() + "," + idioma + "," + tela;
 	}
 }

@@ -60,6 +60,6 @@ public class IngressoInteiro {
 	
 	@Override
 	public String toString() {
-		return idIngresso + ", " + dataVenda + ", " + sessao + ", " + ", " + poltrona + ", " + total;
+		return idIngresso + "," + dataVenda + "," + sessao + "," + "," + poltrona + "," + total;
 	}
 }
