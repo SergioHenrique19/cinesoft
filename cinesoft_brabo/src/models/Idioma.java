@@ -1,5 +1,16 @@
 package models;
 
 public enum Idioma {
-	DUBLADO, LEGENDADO;
+	DUBLADO("dublado"),
+	LEGENDADO("legendado");
+	
+	private final String valor;
+	
+	Idioma(String sValor) {
+		valor = sValor;
+	}
+	
+	public String getValor() {
+		return valor;
+	}
 }

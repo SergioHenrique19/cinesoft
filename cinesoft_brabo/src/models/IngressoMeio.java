@@ -23,6 +23,6 @@ public class IngressoMeio extends IngressoInteiro{
 
 	@Override
 	public String toString() {
-		return idIngresso + ", " + dataVenda + ", " + sessao + ", " + poltrona + ", " + total + ", " + carteirinha;
+		return idIngresso + "," + getDataVenda() + "," + sessao.getIdSessao() + "," + poltrona + "," + total + "," + carteirinha.getValor();
 	}	
 }

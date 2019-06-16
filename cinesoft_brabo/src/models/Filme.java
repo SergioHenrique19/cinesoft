@@ -68,6 +68,6 @@ public class Filme {
 	
 	@Override
 	public String toString() {
-		return idFilme + "," + titulo + "," + getDataLancamento() + "," + duracao + "," + classIndic;
+		return idFilme + "," + titulo + "," + getDataLancamento() + "," + duracao + "," + classIndic.getValor();
 	}
 }

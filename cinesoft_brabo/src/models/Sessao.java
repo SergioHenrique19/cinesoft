@@ -65,6 +65,6 @@ public class Sessao {
 	
 	@Override
 	public String toString() {
-		return idSessao + "," + hora + "," + filme.getTitulo() + "," + idioma + "," + tela;
+		return idSessao + "," + hora + "," + filme.getTitulo() + "," + idioma.getValor() + "," + tela.getValor();
 	}
 }

@@ -1,5 +1,6 @@
 package models;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class IngressoInteiro {
@@ -30,8 +31,9 @@ public class IngressoInteiro {
 		this.idIngresso = idIngresso;
 	}
 	
-	public Date getDataVenda() {
-		return dataVenda;
+	public String getDataVenda() {
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+		return sdf.format(dataVenda);
 	}
 	
 	public void setDataVenda(Date dataVenda) {
@@ -60,6 +62,6 @@ public class IngressoInteiro {
 	
 	@Override
 	public String toString() {
-		return idIngresso + "," + dataVenda + "," + sessao + "," + "," + poltrona + "," + total;
+		return idIngresso + "," + getDataVenda() + "," + sessao.getIdSessao() + "," + "," + poltrona + "," + total;
 	}
 }
