@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc60b816-2dc4-4093-89de-92b285f10df1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/controllers/TesteArq.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/models/Carteirinha.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/models/Carteirinha.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/models/ClassIndic.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/models/ClassIndic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/models/Filme.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/models/Filme.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/models/Idioma.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/models/Idioma.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/models/IngressoInteiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/models/IngressoInteiro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/models/IngressoMeio.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/models/IngressoMeio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/models/Sessao.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/models/Sessao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/models/Tela.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/models/Tela.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/models/Vendedor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/controllers/Cinesoft.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/controllers/Cinesoft.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/controllers/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/controllers/Controlador.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,116 +17,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/models/Carteirinha.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="e#0#485#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/models/ClassIndic.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-              <folding>
-                <element signature="e#0#513#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/models/Filme.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-              <folding>
-                <element signature="e#0#1748#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/models/Idioma.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-              <folding>
-                <element signature="e#0#441#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/models/IngressoInteiro.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1065">
-              <caret line="71" selection-start-line="71" selection-end-line="71" />
-              <folding>
-                <element signature="e#0#1607#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-                <element signature="e#854#855#0" expanded="true" />
-                <element signature="e#878#879#0" expanded="true" />
-                <element signature="e#924#925#0" expanded="true" />
-                <element signature="e#959#960#0" expanded="true" />
-                <element signature="e#1133#1134#0" expanded="true" />
-                <element signature="e#1166#1167#0" expanded="true" />
-                <element signature="e#1196#1197#0" expanded="true" />
-                <element signature="e#1216#1217#0" expanded="true" />
-                <element signature="e#1257#1258#0" expanded="true" />
-                <element signature="e#1284#1285#0" expanded="true" />
-                <element signature="e#1313#1314#0" expanded="true" />
-                <element signature="e#1335#1336#0" expanded="true" />
-                <element signature="e#1377#1378#0" expanded="true" />
-                <element signature="e#1408#1409#0" expanded="true" />
-                <element signature="e#1437#1438#0" expanded="true" />
-                <element signature="e#1456#1457#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/models/IngressoMeio.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
-              <folding>
-                <element signature="e#0#917#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/models/Sessao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="74" selection-start-line="74" selection-end-line="74" />
-              <folding>
-                <element signature="e#0#1490#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/models/Tela.java">
+        <entry file="file://$PROJECT_DIR$/app/src/controllers/Cinesoft.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="2340">
+              <caret line="156" column="19" selection-start-line="156" selection-start-column="19" selection-end-line="156" selection-end-column="19" />
               <folding>
-                <element signature="e#0#419#0" expanded="true" />
+                <element signature="e#0#1008#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/controllers/Controlador.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3495">
+              <caret line="233" selection-start-line="233" selection-end-line="233" />
+              <folding>
+                <element signature="e#0#5475#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#520#527#0" expanded="true" />
+                <element signature="e#590#598#0" expanded="true" />
+                <element signature="e#670#687#0" expanded="true" />
+                <element signature="e#757#771#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -159,7 +64,6 @@
       <list>
         <option value="$PROJECT_DIR$/app/src/repository/Connection.java" />
         <option value="$PROJECT_DIR$/app/src/repository/Constants.java" />
-        <option value="$PROJECT_DIR$/app/src/controllers/Cinesoft.java" />
         <option value="$PROJECT_DIR$/app/src/repository/Database.java" />
         <option value="$PROJECT_DIR$/app/src/models/Carteirinha.java" />
         <option value="$PROJECT_DIR$/app/src/models/ClassIndic.java" />
@@ -169,6 +73,8 @@
         <option value="$PROJECT_DIR$/app/src/models/IngressoMeio.java" />
         <option value="$PROJECT_DIR$/app/src/models/Sessao.java" />
         <option value="$PROJECT_DIR$/app/src/models/Tela.java" />
+        <option value="$PROJECT_DIR$/app/src/controllers/Controlador.java" />
+        <option value="$PROJECT_DIR$/app/src/controllers/Cinesoft.java" />
       </list>
     </option>
   </component>
@@ -344,28 +250,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/controllers/Cinesoft.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/.project">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/controllers/Controlador.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/models/Carteirinha.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -458,10 +344,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/models/Tela.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="e#0#419#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/controllers/Controlador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3495">
+          <caret line="233" selection-start-line="233" selection-end-line="233" />
+          <folding>
+            <element signature="e#0#5475#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#520#527#0" expanded="true" />
+            <element signature="e#590#598#0" expanded="true" />
+            <element signature="e#670#687#0" expanded="true" />
+            <element signature="e#757#771#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/controllers/Cinesoft.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2340">
+          <caret line="156" column="19" selection-start-line="156" selection-start-column="19" selection-end-line="156" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#1008#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
