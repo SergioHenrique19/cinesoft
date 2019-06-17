@@ -13,11 +13,15 @@ import repository.Database;
 public class Cinesoft {
 	public static void main(String[] args) throws ParseException {
 		Filme filme = new Filme();
-		int id = filme.create("Avatar", "2009-05-01", 180);
+		int idfilme = filme.create("Avatar", "2009-05-01", 180);
 		filme.update(1, "titulo = 'Titanic'");
 
 		models.Filme resultado = filme.getByTitulo("Tita");
 		System.out.println(resultado.getTitulo());
+
+		Sessao sessao = new Sessao();
+		int idSessao = sessao.create(1,1,18,1);
+		System.out.println((idSessao));
 
 		/*while(true)
 		{

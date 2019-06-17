@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc60b816-2dc4-4093-89de-92b285f10df1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/controllers/Filme.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/controllers/Sessao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/controllers/Cinesoft.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/controllers/Cinesoft.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/controllers/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/controllers/Controlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/controllers/TesteArq.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/models/Filme.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/models/Filme.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/repository/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/repository/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/app/controllers/Cinesoft.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/app/controllers/Cinesoft.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/app/controllers/Controlador.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/app/models/Filme.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/app/models/Filme.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/app/repository/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/app/repository/Database.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/controllers/Filme.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/controllers/Filme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/controllers/Sessao.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/controllers/Sessao.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/controllers/Cinesoft.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="255">
+              <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,8 +33,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/controllers/Filme.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="27" column="5" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
+            <state relative-caret-position="415">
+              <caret line="67" column="21" lean-forward="true" selection-start-line="54" selection-start-column="8" selection-end-line="67" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#917#931#0" expanded="true" />
@@ -56,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/controllers/Sessao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+            <state relative-caret-position="75">
+              <caret line="22" column="79" selection-start-line="22" selection-start-column="79" selection-end-line="22" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,6 +64,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>sessao</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -85,8 +80,8 @@
         <option value="$PROJECT_DIR$/app/src/models/Filme.java" />
         <option value="$PROJECT_DIR$/app/src/controllers/Controlador.java" />
         <option value="$PROJECT_DIR$/app/src/repository/Database.java" />
-        <option value="$PROJECT_DIR$/app/src/controllers/Cinesoft.java" />
         <option value="$PROJECT_DIR$/app/src/controllers/Filme.java" />
+        <option value="$PROJECT_DIR$/app/src/controllers/Cinesoft.java" />
         <option value="$PROJECT_DIR$/app/src/controllers/Sessao.java" />
       </list>
     </option>
@@ -193,7 +188,7 @@
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32569557" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32569557" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -342,15 +337,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/controllers/Controlador.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="83" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="83" />
+        <state relative-caret-position="111">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/controllers/Cinesoft.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="255">
+          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -359,8 +354,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/controllers/Filme.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
+        <state relative-caret-position="415">
+          <caret line="67" column="21" lean-forward="true" selection-start-line="54" selection-start-column="8" selection-end-line="67" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#917#931#0" expanded="true" />
@@ -370,8 +365,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/controllers/Sessao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+        <state relative-caret-position="75">
+          <caret line="22" column="79" selection-start-line="22" selection-start-column="79" selection-end-line="22" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

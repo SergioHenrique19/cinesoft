@@ -3,6 +3,9 @@ package controllers;
 import repository.Database;
 
 import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.text.ParseException;
 
 public class Sessao {
     private static Database db;
@@ -14,8 +17,26 @@ public class Sessao {
         connection = db.open();
     }
 
-    public int create(String titulo, String data, int duracao)
+    public models.Sessao getById(int id)
     {
-        return db.insert(connection, "sessao", "titulo, lancamento, duracao", "'Avatar', '2009-05-01', 180");
+        models.Sessao sessao = null;
+        ResultSet result = db.select(connection, "*", "sessoes", "id == " + id +";");
+        while(true)
+        {
+            try {
+                if (!result.next()) break;
+                sessao = new models.Sessao()
+            } catch (SQLException e) {
+                e.printStackTrace();
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+        }
+        return sessao;
+    }
+
+    public int create(int idioma, int tela, int hora, int filme)
+    {
+        return db.insert(connection, "sessoes", "idioma,tela,hora,filme", idioma +","+tela+","+hora+","+filme );
     }
 }

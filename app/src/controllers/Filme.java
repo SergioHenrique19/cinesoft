@@ -24,7 +24,7 @@ public class Filme {
 
     public int create(String titulo, String data, int duracao)
     {
-        return db.insert(connection, "filmes", "titulo, lancamento, duracao", "'Avatar', '2009-05-01', 180");
+        return db.insert(connection, "filmes", "titulo, lancamento, duracao", "'"+titulo+"', '"+data+"', " + duracao);
     }
 
     public void update(int id, String fields)
