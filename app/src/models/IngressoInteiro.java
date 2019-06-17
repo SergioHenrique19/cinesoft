@@ -7,7 +7,7 @@ public class IngressoInteiro {
 	// Atributos individuais
 	protected int idIngresso;
 	protected Date dataVenda;
-	protected Sessao sessao;   // Atributo que referencia sessao
+	protected int sessao;   // Atributo que referencia sessao
 	protected int poltrona;
 	protected double total;
 	
@@ -15,7 +15,7 @@ public class IngressoInteiro {
 	public IngressoInteiro() {}
 	
 	// Construtor com parametros individuais
-	public IngressoInteiro(int idIngresso, Date dataVenda, Sessao sessao, int poltrona) {
+	public IngressoInteiro(int idIngresso, Date dataVenda, int sessao, int poltrona) {
 		this.idIngresso = idIngresso;
 		this.dataVenda = dataVenda;
 		this.sessao = sessao;
@@ -40,11 +40,11 @@ public class IngressoInteiro {
 		this.dataVenda = dataVenda;
 	}
 	
-	public Sessao getSessao() {
+	public int getSessao() {
 		return sessao;
 	}
 	
-	public void setSessao(Sessao sessao) {
+	public void setSessao(int sessao) {
 		this.sessao = sessao;
 	}
 	
@@ -60,8 +60,8 @@ public class IngressoInteiro {
 		return total;
 	}
 	
-	@Override
-	public String toString() {
-		return idIngresso + "," + getDataVenda() + "," + sessao.getIdSessao() + "," + "," + poltrona + "," + total;
-	}
+//	@Override
+//	public String toString() {
+//		return idIngresso + "," + getDataVenda() + "," + sessao.getIdSessao() + "," + "," + poltrona + "," + total;
+//	}
 }
