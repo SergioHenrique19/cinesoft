@@ -55,8 +55,8 @@ public class Filme {
 	
 	public void setDuracao(int duracao) {
 		this.duracao = duracao;
-	}	
-	
+	}
+
 	public ClassIndic getClassIndic() {
 		return classIndic;
 	}
