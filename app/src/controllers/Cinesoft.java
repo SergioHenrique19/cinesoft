@@ -7,17 +7,18 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-import controllers.Controlador;
 import models.*;
 import repository.Database;
 
 public class Cinesoft {
 	public static void main(String[] args) throws ParseException {
-		Database db = new Database();
-		Connection conn = db.open();
-		//db.insert(conn, "filmes", "titulo, lancamento, duracao", "'Avatar', '2009-05-01', 180");
-		//ResultSet result = db.select(conn, "*", "filmes");
-		//ResultSet result = db.select(conn, "*", "filmes", "id == 1");
+		Filme filme = new Filme();
+		int id = filme.create("Avatar", "2009-05-01", 180);
+		filme.update(1, "titulo = 'Titanic'");
+
+		models.Filme resultado = filme.getByTitulo("Tita");
+		System.out.println(resultado.getTitulo());
+
 		/*while(true)
 		{
 			try {

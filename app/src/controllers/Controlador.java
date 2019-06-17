@@ -1,3 +1,4 @@
+/*
 package controllers;
 
 import java.text.ParseException;
@@ -11,8 +12,8 @@ import models.*;
 
 public class Controlador {
 	// Listas de filmes e de sessoes
-	protected static List<Filme> listaFilmes = new ArrayList<Filme>();
-	protected static List<Sessao> listaSessoes = new ArrayList<Sessao>();
+	protected static List<models.Filme> listaFilmes = new ArrayList<models.Filme>();
+	protected static List<models.Sessao> listaSessoes = new ArrayList<models.Sessao>();
 	
 	// Metodo para cadastrar um filme na lista e no arquivo
 	public static void cadastrarFilme(int idFilme, String titulo, String datah, int duracao, String classific) throws ParseException {
@@ -50,13 +51,13 @@ public class Controlador {
 				break;
 		}
 		
-		Filme f = new Filme(idFilme, titulo, dataLancamento, duracao, classIndic);
+		models.Filme f = new models.Filme(idFilme, titulo, dataLancamento, duracao, classIndic);
 		listaFilmes.add(f);
 	}
 	
 	// Funcao que busca filme pelo titulo na lista do mesmo
-	public static Filme buscarFilme(String busca) {
-		for(Filme filme : listaFilmes) {
+	public static models.Filme buscarFilme(String busca) {
+		for(models.Filme filme : listaFilmes) {
 			if(filme.getTitulo().equals(busca)) {
 				return filme;
 			}
@@ -185,3 +186,4 @@ public class Controlador {
 		listaSessoes.remove(ind);
 	}
 }
+*/

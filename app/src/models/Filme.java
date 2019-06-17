@@ -17,12 +17,11 @@ public class Filme {
 	public Filme(){}
 	
 	// Construtor com parametros individuais
-	public Filme(int idFilme, String titulo, Date dataLancamento, int duracao, ClassIndic classIndic) {
+	public Filme(int idFilme, String titulo, Date dataLancamento, int duracao) {
 		this.idFilme = idFilme;
 		this.titulo = titulo;
 		this.dataLancamento = dataLancamento;
 		this.duracao = duracao;
-		this.classIndic = classIndic;
 	}
 	
 	public int getIdFilme() {

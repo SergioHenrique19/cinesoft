@@ -39,6 +39,36 @@ public class Database {
         }
     }
 
+    public void update(Connection conn, String table, String fields)
+    {
+        try{
+            String sql = "UPDATE " + table + " SET " + fields+";";
+            Statement stmt = conn.createStatement();
+            int affected = stmt.executeUpdate(sql);
+            System.out.println("# Rows affected by UPDATE: " + affected);
+        }
+        catch (SQLException e)
+        {
+            System.out.println("# Couldn't run UPDATE query due to:");
+            System.out.println(e.getMessage());
+        }
+    }
+
+    public void update(Connection conn, String table, String fields, String where)
+    {
+        try{
+            String sql = "UPDATE " + table + " SET " + fields + " WHERE " + where + ";";
+            Statement stmt = conn.createStatement();
+            int affected = stmt.executeUpdate(sql);
+            System.out.println("# Rows affected by UPDATE: " + affected);
+        }
+        catch (SQLException e)
+        {
+            System.out.println("# Couldn't run UPDATE query due to:");
+            System.out.println(e.getMessage());
+        }
+    }
+
     public ResultSet select(Connection conn, String fields, String table, String where)
     {
         try {
