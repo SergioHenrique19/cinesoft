@@ -34,6 +34,7 @@ public class Cinesoft {
 			System.out.println(" (9) Sair");
 			System.out.println(" Opcao: ");
 			opcao = sc.nextInt();
+			System.out.print("\033[H\033[2J");
 
 			switch(opcao) {
 				case 1:
@@ -152,6 +153,7 @@ public class Cinesoft {
 					System.out.println("ERROR: OPCAO INVALIDA!!!");
 					break;
 			}
+			System.out.print("\033[H\033[2J");
 		}
 
 		sc.close();
