@@ -88,6 +88,7 @@ public class Database {
         int id = -1;
         try{
             String sql = "INSERT INTO " + table + " (" + fields + ") VALUES("+ values +");";
+            System.out.println(sql);
             Statement stmt = conn.createStatement();
             int affected = stmt.executeUpdate(sql);
             System.out.println("# Rows affected by INSERT: " + affected);

@@ -21,8 +21,14 @@ public class Cinesoft {
 		Sessao sessao = new Sessao();
 		int idSessao = sessao.create(1,1,18,1);
 		sessao.update(1, "hora = 24");
-		models.Sessao resultadoSessao = sessao.getById(1);
+		models.Sessao resultadoSessao = sessao.getById(idSessao);
 		System.out.println(resultadoSessao.getHora());
+
+		IngressoInteiro ingressoInteiro = new IngressoInteiro();
+		int idIngressoInteiro = ingressoInteiro.create("2019-16-06", 45, idSessao);
+		ingressoInteiro.update(idIngressoInteiro, "venda = '2019-15-05'");
+		models.IngressoInteiro resultadoIngressoInteiro = ingressoInteiro.getById(idIngressoInteiro);
+		System.out.println(resultadoIngressoInteiro.getPoltrona());
 
 		/*while(true)
 		{
