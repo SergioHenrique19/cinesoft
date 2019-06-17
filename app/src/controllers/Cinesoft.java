@@ -30,6 +30,14 @@ public class Cinesoft {
 		models.IngressoInteiro resultadoIngressoInteiro = ingressoInteiro.getById(idIngressoInteiro);
 		System.out.println(resultadoIngressoInteiro.getPoltrona());
 
+		IngressoMeio IngressoMeio = new IngressoMeio();
+		int idIngressoMeio = IngressoMeio.create("2019-16-06", 45, idSessao, "201810548");
+		IngressoMeio.update(idIngressoMeio, "carteirinha = '201810788'");
+		models.IngressoMeio resultadoIngressoMeio = IngressoMeio.getById(idIngressoMeio);
+		System.out.println(resultadoIngressoMeio.getCarteirinha());
+
+
+
 		/*while(true)
 		{
 			try {
