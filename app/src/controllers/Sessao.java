@@ -25,10 +25,8 @@ public class Sessao {
         {
             try {
                 if (!result.next()) break;
-                sessao = new models.Sessao()
+                sessao = new models.Sessao(result.getInt("id"), result.getInt("hora"), result.getInt("filme"), result.getInt("idioma"), result.getInt("tela"));
             } catch (SQLException e) {
-                e.printStackTrace();
-            } catch (ParseException e) {
                 e.printStackTrace();
             }
         }
@@ -38,5 +36,10 @@ public class Sessao {
     public int create(int idioma, int tela, int hora, int filme)
     {
         return db.insert(connection, "sessoes", "idioma,tela,hora,filme", idioma +","+tela+","+hora+","+filme );
+    }
+
+    public void update(int id, String fields)
+    {
+        db.update(connection, "sessoes", fields, "id == " + Integer.toString(id));
     }
 }

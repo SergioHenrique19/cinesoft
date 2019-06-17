@@ -7,15 +7,15 @@ public class Sessao {
 	// Atributos de uma sessao
 	private int idSessao;
 	private int hora;
-	private Filme filme;   // Atributo que referencia um (titulo) filme
-	private Idioma idioma;   // dublado ou legendado
-	private Tela tela;   // Onde "true = 3D" e "false = 2D"
+	private int filme;   // Atributo que referencia um (titulo) filme
+	private int idioma;   // dublado ou legendado
+	private int tela;   // Onde "true = 3D" e "false = 2D"
 	
 	// Construtor sem parametro
 	public Sessao(){}
 	
 	// Construtor com parametros individuais
-	public Sessao(int idSessao, int hora, Filme filme, Idioma idioma, Tela tela) {
+	public Sessao(int idSessao, int hora, int filme, int idioma, int tela) {
 		this.idSessao = idSessao;
 		this.hora = hora;
 		this.filme = filme;
@@ -39,32 +39,30 @@ public class Sessao {
 		this.hora = hora;
 	}
 	
-	public Filme getFilme() {
+	public int getFilme() {
 		return filme;
 	}
 	
-	public void setFilme(Filme filme) {
+	public void setFilme(int filme) {
 		this.filme = filme;
 	}
 	
-	public Idioma getIdioma() {
-		return idioma;
-	}
+	public int getIdioma() { return idioma; }
 	
-	public void setIdioma(Idioma idioma) {
+	public void setIdioma(int idioma) {
 		this.idioma = idioma;
 	}
 	
-	public Tela getTela() {
+	public int getTela() {
 		return tela;
 	}
 	
-	public void setTela(Tela tela) {
+	public void setTela(int tela) {
 		this.tela = tela;
 	}
 	
-	@Override
-	public String toString() {
-		return idSessao + "," + hora + "," + filme.getTitulo() + "," + idioma.getValor() + "," + tela.getValor();
-	}
+//	@Override
+//	public String toString() {
+//		return idSessao + "," + hora + "," + filme.getTitulo() + "," + idioma.getValor() + "," + tela.getValor();
+//	}
 }
